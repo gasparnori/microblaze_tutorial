@@ -1,0 +1,35 @@
+17:14:03 **** Build of configuration Debug for project adc ****
+make all 
+'Building file: ../src/adc_main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/adc_main.o" -I../../adc_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.o" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:258:10: warning: unused variable 'message' [-Wunused-variable]
+       u8 message=READ_REG_DEVICE_ID;
+          ^
+'Finished building: ../src/adc_main.c'
+' '
+'Building file: ../src/xgpio_tapp_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_tapp_example.o" -I../../adc_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/xgpio_tapp_example.d" -MT"src/xgpio_tapp_example.o" -o "src/xgpio_tapp_example.o" "../src/xgpio_tapp_example.c"
+'Finished building: ../src/xgpio_tapp_example.c'
+' '
+'Building file: ../src/xspi_selftest_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xspi_selftest_example.o" -I../../adc_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/xspi_selftest_example.d" -MT"src/xspi_selftest_example.o" -o "src/xspi_selftest_example.o" "../src/xspi_selftest_example.c"
+'Finished building: ../src/xspi_selftest_example.c'
+' '
+'Building target: adc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../adc_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "adc.elf"  ./src/adc_main.o ./src/xgpio_tapp_example.o ./src/xspi_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilisf,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size adc.elf  |tee "adc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 107796	   1716	   2528	 112040	  1b5a8	adc.elf
+'Finished building: adc.elf.size'
+' '
+
+17:14:03 Build Finished (took 712ms)
+

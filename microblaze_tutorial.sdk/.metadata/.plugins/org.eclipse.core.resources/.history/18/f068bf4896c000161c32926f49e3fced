@@ -1,0 +1,284 @@
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xgpio.h"
+#include "gpio_header.h"
+#include "xspi.h"
+#include "spi_header.h"
+#include "adc.h"
+
+//GPIO related constants
+#define Gpio_Id  XPAR_AXI_GPIO_0_DEVICE_ID //this constant can be found in the xparameters.h file
+#define LED_CHANNEL 2
+#define BTN_CHANNEL 1
+#define LED_OFF 0x00000000
+#define LED_ON 0x11111111
+#define OUTPUT_CHANNEL 0
+#define INPUT_CHANNEL 1
+
+//ADC related constants
+#define ADC_ID XPAR_ADC_CONTROL_DEVICE_ID
+#define DATA_READY 1
+#define CTRL_OUT 2
+
+//SPI_SLAVE related constants
+#define Slave_Id XPAR_SPI_S_DEVICE_ID //this constant can be found in the xparameters.h file
+#define BUFFERSIZE 1
+
+#define Master_Id XPAR_SPI_M_DEVICE_ID //this constant can be found in the xparameters.h file
+
+static XGpio INFO_LED;
+static XGpio ADC;
+static XSpi Spi_S;
+static XSpi Spi_M;
+
+int Spi_S_Init()
+{
+	XSpi * Spi=&Spi_S;
+	//if we are after a reset, we need to reset the SPI interface too
+	if (Spi->IsStarted == XIL_COMPONENT_IS_STARTED) {
+		XSpi_Reset(Spi);
+		printf("Resetting SPI\r\n");
+	}
+	else{ 	//If it's the first run, we need to start with initialization
+		XSpi_Config *ConfigPtr;	// Pointer to Configuration data
+		ConfigPtr = XSpi_LookupConfig(Slave_Id);
+		if (ConfigPtr == NULL) {
+			printf("interface not found\r\n");
+			return XST_DEVICE_NOT_FOUND;
+		}
+		if(XSpi_Initialize(Spi, Slave_Id)!=XST_SUCCESS){
+		//if (XSpi_CfgInitialize(Spi, ConfigPtr, ConfigPtr->BaseAddress)!= XST_SUCCESS){
+			printf("error with initialization\r\n");
+			return XST_FAILURE;
+		}
+
+		if(XSpi_SetOptions(Spi, XSP_CLK_PHASE_1_OPTION |XSP_CLK_ACTIVE_LOW_OPTION)!= XST_SUCCESS) {
+			printf("error with slave settings\r\n");
+			return XST_FAILURE;
+		};
+		u16 ControlReg = XSpi_GetControlReg(Spi);
+		xil_printf("ControlReg: %u\r\n", ControlReg);
+
+
+		//Perform a self-test to ensure that the hardware was built correctly
+		if(XSpi_SelfTest(Spi)!= XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+		printf("Starting SPI...\r\n");
+	}
+	XSpi_Start(Spi);
+	XSpi_IntrGlobalDisable(Spi);
+
+	return XST_SUCCESS;
+}
+
+int Spi_M_Init()
+{
+	XSpi * Spi=&Spi_M;
+	//if we are after a reset, we need to reset the SPI interface too
+	if (Spi->IsStarted == XIL_COMPONENT_IS_STARTED) {
+		XSpi_Reset(Spi);
+		printf("Resetting SPI\r\n");
+	}
+	else{ 	//If it's the first run, we need to start with initialization
+		XSpi_Config *ConfigPtr;	// Pointer to Configuration data
+		ConfigPtr = XSpi_LookupConfig(Master_Id);
+		if (ConfigPtr == NULL) {
+			printf("interface not found\r\n");
+			return XST_DEVICE_NOT_FOUND;
+		}
+		if(XSpi_Initialize(Spi, Master_Id)!=XST_SUCCESS){
+		//if (XSpi_CfgInitialize(Spi, ConfigPtr, ConfigPtr->BaseAddress)!= XST_SUCCESS){
+			printf("error with initialization\r\n");
+			return XST_FAILURE;
+		}
+		//it's a master device
+		/*	printf("master settings...");
+			if(XSpi_SetOptions(Spi, XSP_MASTER_OPTION | XSP_CLK_PHASE_1_OPTION |XSP_CLK_ACTIVE_LOW_OPTION)!= XST_SUCCESS) {
+				printf("error with master settings\r\n");
+				return XST_FAILURE;
+			};
+
+			u16 ControlReg = XSpi_GetControlReg(Spi);
+			xil_printf("ControlReg: %u\r\n", ControlReg);*/
+
+		//Perform a self-test to ensure that the hardware was built correctly
+		if(XSpi_SelfTest(Spi)!= XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+		printf("Starting SPI...\r\n");
+	}
+	XSpi_Start(Spi);
+	XSpi_IntrGlobalDisable(Spi);
+
+	XSpi_SetOptions(Spi, XSP_MASTER_OPTION);
+
+	return XST_SUCCESS;
+}
+
+int ADCInit(XGpio *Gpio, u16 DeviceId){
+	if (XGpio_Initialize(Gpio, DeviceId) != XST_SUCCESS) {
+			  return XST_FAILURE;
+		 }
+	XGpio_SetDataDirection(Gpio, DATA_READY, INPUT_CHANNEL);
+	XGpio_SetDataDirection(Gpio, CTRL_OUT, OUTPUT_CHANNEL);
+	XGpio_DiscreteWrite(Gpio, CTRL_OUT, RESET_PULSE); //RST, START
+	XGpio_DiscreteWrite(Gpio, CTRL_OUT, START_CONV); //default START is 0
+	return XST_SUCCESS;
+}
+
+int GPIOInit(XGpio *Gpio, u16 DeviceId){
+	 	if (XGpio_Initialize(Gpio, DeviceId) != XST_SUCCESS) {
+			  return XST_FAILURE;
+		 }
+
+		 /* Set the direction for the signals */
+		 XGpio_SetDataDirection(Gpio, LED_CHANNEL, OUTPUT_CHANNEL);
+		 XGpio_SetDataDirection(Gpio, BTN_CHANNEL, INPUT_CHANNEL);
+		 XGpio_DiscreteWrite(Gpio, LED_CHANNEL, LED_OFF);
+		 return XST_SUCCESS;
+}
+
+void Read_GPIO(XGpio *LED){
+	if(XGpio_DiscreteRead(LED, BTN_CHANNEL) == 0x1) {
+			XGpio_DiscreteWrite(LED, LED_CHANNEL, LED_OFF);
+		}
+	else{
+		XGpio_DiscreteWrite(LED, LED_CHANNEL, LED_ON);
+	}
+}
+
+int SPI_slave_transfer(XSpi *Spi, XGpio *LED, u8 *message){
+	u8 received=0x00;
+	XSpi_Transfer(Spi, message, &received, 1);
+	printf("received data: 0x%x \r\n", received);
+
+	//if the received message is a certain command, it turns on the LED, otherwise it's off
+	if (received==0xFC){
+		XGpio_DiscreteWrite(LED, LED_CHANNEL, LED_ON);
+	}
+	else{
+		XGpio_DiscreteWrite(LED, LED_CHANNEL, LED_OFF);
+	}
+	return 0;
+}
+int SPI_master_config(u8 message){
+	int buf_size=4;
+	u8 WriteBuffer[buf_size];
+	u8 ReadBuffer[buf_size];
+
+	WriteBuffer[0]= WRITE_REG_GPIO_CONF; //message;
+	WriteBuffer[1]= WRITE_REG_GPIO_CONF2;
+	WriteBuffer[2]= WRITE_REG_GPIO_VAL;
+	WriteBuffer[3]= WRITE_REG_GPIO_VAL2;
+
+	XSpi * Spi=&Spi_M;
+	//u8 received;
+	XSpi_SetSlaveSelect(Spi, 0xFF);	//this only selects which slave will be used... doesn't initiate the communication...
+	//XSpi_Transfer(Spi, &message, &received, 1);
+	XSpi_Transfer(Spi, WriteBuffer, ReadBuffer, buf_size);
+	//xil_printf(" received 0x%x \r\n", received);
+	for (int i=0; i<buf_size; i++){
+		xil_printf("%d. sent 0x%x \r\n", i, WriteBuffer[i]);
+		xil_printf("%d. received 0x%x \r\n", i, ReadBuffer[i]);
+	}
+
+	return ReadBuffer[0];
+	//return received;
+}
+int SPI_master_testcomm(){
+	int buf_size=3;
+	u8 WriteBuffer[buf_size];
+	u8 ReadBuffer[buf_size];
+
+	WriteBuffer[0]=0x49; //message;
+	WriteBuffer[1]=0x00;
+	WriteBuffer[2]=0x00;
+
+	XSpi * Spi=&Spi_M;
+	//u8 received;
+	XSpi_SetSlaveSelect(Spi, 0xFF);	//this only selects which slave will be used... doesn't initiate the communication...
+	//XSpi_Transfer(Spi, &message, &received, 1);
+	XSpi_Transfer(Spi, WriteBuffer, ReadBuffer, buf_size);
+	//xil_printf(" received 0x%x \r\n", received);
+	for (int i=0; i<buf_size; i++){
+		xil_printf("%d. sent 0x%x \r\n", i, WriteBuffer[i]);
+		xil_printf("%d. received 0x%x \r\n", i, ReadBuffer[i]);
+	}
+
+	return ReadBuffer[0];
+	//return received;
+}
+
+/*int SPI_master_transfer(){
+	int buf_size=2;
+	u8 WriteBuffer[buf_size];
+	u8 ReadBuffer[buf_size];
+	XSpi * Spi=&Spi_M;
+
+	WriteBuffer[0]=WRITE_REG_GPIO_CONF;
+	WriteBuffer[1]=WRITE_REG_GPIO_CONF2;
+
+	XSpi_Transfer(Spi, WriteBuffer, ReadBuffer, buf_size);
+	for (int i=0; i<buf_size; i++){
+		xil_printf("%d. received 0x%x \r\n", i, ReadBuffer[i]);
+	}
+	WriteBuffer[0]=WRITE_REG_GPIO_VAL;
+	WriteBuffer[1]=WRITE_REG_GPIO_VAL2;
+
+
+	XSpi_Transfer(Spi, WriteBuffer, ReadBuffer, buf_size);
+	for (int i=0; i<buf_size; i++){
+		xil_printf("%d. received 0x%x \r\n", i, ReadBuffer[i]);
+	}
+
+	return ReadBuffer[0];
+}*/
+
+int main()
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+
+   int gpiotest=GPIOInit(&INFO_LED, Gpio_Id);
+   //int spitest= Spi_S_Init();
+   int spitestm=Spi_M_Init();
+   int adctest=ADCInit(&ADC, ADC_ID);
+
+  if ( gpiotest == XST_SUCCESS && spitestm == XST_SUCCESS && adctest == XST_SUCCESS) {
+	  //if the initialization was succesfull, we can enter the loop
+	  	  printf("initialization done :)\r\n");
+	  	  XGpio_DiscreteWrite(&INFO_LED, LED_CHANNEL, LED_ON);
+
+	  	  while(1){
+	  		 // Read_GPIO(&LED); //we use the LED for the SPI now...
+	  		 if (XGpio_DiscreteRead(&ADC, DATA_READY) == 0){
+	  			//u8 message=READ_REG_DEVICE_ID;
+	  		  	//u8 message = 0x04;
+
+	  			//SPI_master_transfer();
+	  			message = 0x49;
+	  			//printf("data ready...\r\n");
+	  			SPI_master_testcomm();
+	  			//SPI_master_config(message);
+//	  			message=WRITE_REG_GPIO_CONF;
+//				SPI_master_transfer1(message);
+//				message=WRITE_REG_GPIO_VAL;
+//	  			SPI_master_transfer1(message);
+	  		 }
+
+	  		  //SPI transfer
+	  		  //SPI_slave_transfer(&Spi_S, &LED, &message);
+	  	  }
+	  }
+	  else {
+		 print(" initialization error :(\r\n");
+		 Xil_DCacheDisable();
+		 Xil_ICacheDisable();
+		 return -1;
+	  }
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}

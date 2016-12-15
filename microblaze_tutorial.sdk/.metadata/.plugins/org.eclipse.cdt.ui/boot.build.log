@@ -1,0 +1,75 @@
+17:14:04 **** Build of configuration Debug for project boot ****
+make all 
+'Building file: ../src/bootloader.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bootloader.o" -I../../adc_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/bootloader.d" -MT"src/bootloader.o" -o "src/bootloader.o" "../src/bootloader.c"
+In file included from ../src/bootloader.c:37:0:
+../src/blconfig.h:32:2: warning: #warning "Please provide the correct address value for the definition FLASH_IMAGE_BASEADDR. Please give the flash offset @ which SREC application is programmed" [-Wcpp]
+ #warning "Please provide the correct address value for the definition FLASH_IMAGE_BASEADDR. Please give the flash offset @ which SREC application is programmed"
+  ^
+../src/bootloader.c:56:2: warning: #warning "Set your Device ID here, as defined in xparameters.h" [-Wcpp]
+ #warning "Set your Device ID here, as defined in xparameters.h"
+  ^
+../src/bootloader.c:135:5: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+     "",
+     ^
+../src/bootloader.c:135:5: note: (near initialization for 'errors[0]')
+../src/bootloader.c:136:5: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+     "Error while copying executable image into RAM",
+     ^
+../src/bootloader.c:136:5: note: (near initialization for 'errors[1]')
+../src/bootloader.c:137:5: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+     "Error while reading an SREC line from flash",
+     ^
+../src/bootloader.c:137:5: note: (near initialization for 'errors[2]')
+../src/bootloader.c:138:5: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+     "SREC line is corrupted",
+     ^
+../src/bootloader.c:138:5: note: (near initialization for 'errors[3]')
+../src/bootloader.c:139:5: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+     "SREC has invalid checksum."
+     ^
+../src/bootloader.c:139:5: note: (near initialization for 'errors[4]')
+../src/bootloader.c: In function 'main':
+../src/bootloader.c:202:16: warning: pointer targets in passing argument 1 of 'print' differ in signedness [-Wpointer-sign]
+         print (errors[ret]);    
+                ^
+In file included from d:\sdk\2016.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/bootloader.c:34:
+d:\sdk\2016.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: expected 'const char *' but argument is of type 'int8_t * {aka signed char *}'
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/bootloader.c:205:16: warning: pointer targets in passing argument 1 of 'print' differ in signedness [-Wpointer-sign]
+         print (errors[ret]);
+                ^
+In file included from d:\sdk\2016.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/bootloader.c:34:
+d:\sdk\2016.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: note: expected 'const char *' but argument is of type 'int8_t * {aka signed char *}'
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/bootloader.c: In function 'flash_get_srec_line':
+../src/bootloader.c:289:24: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+      ReadParam.Address = flbuf++;
+                        ^
+../src/bootloader.c:328:6: warning: implicit declaration of function 'IsfWaitForFlashNotBusy' [-Wimplicit-function-declaration]
+      IsfWaitForFlashNotBusy();
+      ^
+../src/bootloader.c:334:28: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+          ReadParam.Address = flbuf++;
+                            ^
+'Finished building: ../src/bootloader.c'
+' '
+'Building target: boot.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../adc_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "boot.elf"  ./src/bootloader.o ./src/platform.o ./src/srec.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilisf,-lxil,-lgcc,-lc,--end-group
+'Finished building target: boot.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size boot.elf  |tee "boot.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17168	    388	   1932	  19488	   4c20	boot.elf
+'Finished building: boot.elf.size'
+' '
+
+17:14:04 Build Finished (took 311ms)
+

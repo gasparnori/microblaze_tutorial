@@ -1,0 +1,13 @@
+com.xilinx.sdk.linkgen.prefs.adc\:.bss=axi_emc_0_MEM0
+com.xilinx.sdk.linkgen.prefs.adc\:.data=axi_emc_0_MEM0
+com.xilinx.sdk.linkgen.prefs.adc\:.rodata=axi_emc_0_MEM0
+com.xilinx.sdk.linkgen.prefs.adc\:.sbss=axi_emc_0_MEM0
+com.xilinx.sdk.linkgen.prefs.adc\:.sbss2=axi_emc_0_MEM0
+com.xilinx.sdk.linkgen.prefs.adc\:.sdata=axi_emc_0_MEM0
+com.xilinx.sdk.linkgen.prefs.adc\:.sdata2=axi_emc_0_MEM0
+com.xilinx.sdk.linkgen.prefs.adc\:.text=axi_emc_0_MEM0
+com.xilinx.sdk.linkgen.prefs.adc\:heap=axi_emc_0_MEM0
+com.xilinx.sdk.linkgen.prefs.adc\:heap-size=1024
+com.xilinx.sdk.linkgen.prefs.adc\:stack=axi_emc_0_MEM0
+com.xilinx.sdk.linkgen.prefs.adc\:stack-size=1024
+eclipse.preferences.version=1

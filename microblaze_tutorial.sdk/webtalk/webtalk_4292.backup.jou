@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# 
+# Start of session at: Tue Nov 29 20:57:09 2016
+# Process ID: 4292
+# Current directory: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.sdk/webtalk/webtalk.log
+# Journal file: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

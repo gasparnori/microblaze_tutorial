@@ -1,0 +1,26 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../microblaze_new.srcs/sources_1/new/adc_io.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_microblaze_0_0/sim/d_microblaze_0_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_clk_wiz_0_0/d_clk_wiz_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_dlmb_v10_0/sim/d_dlmb_v10_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_ilmb_v10_0/sim/d_ilmb_v10_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_dlmb_bram_if_cntlr_0/sim/d_dlmb_bram_if_cntlr_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_ilmb_bram_if_cntlr_0/sim/d_ilmb_bram_if_cntlr_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_lmb_bram_0/d_lmb_bram_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_mdm_1_0/sim/d_mdm_1_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_rst_clk_wiz_0_100M_0/sim/d_rst_clk_wiz_0_100M_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_axi_emc_0_0/sim/d_axi_emc_0_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_axi_uartlite_0_0/sim/d_axi_uartlite_0_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_xbar_0/d_xbar_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/hdl/d.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_axi_gpio_0_0/sim/d_axi_gpio_0_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_xbar_1/d_xbar_1_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_axi_quad_spi_0_0/d_axi_quad_spi_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_axi_quad_spi_1_0/d_axi_quad_spi_1_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_axi_gpio_1_0/sim/d_axi_gpio_1_0.vhd"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_adc_io_0_0/d_adc_io_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../microblaze_new.ip_user_files/bd/d/ip/d_axi_quad_spi_0_3/d_axi_quad_spi_0_3_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log d_clk_wiz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source d_clk_wiz_0_0.tcl
+

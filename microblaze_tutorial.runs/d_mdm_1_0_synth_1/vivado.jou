@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Nov 18 12:15:23 2016
+# Process ID: 9060
+# Current directory: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/d_mdm_1_0_synth_1
+# Command line: vivado.exe -log d_mdm_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source d_mdm_1_0.tcl
+# Log file: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/d_mdm_1_0_synth_1/d_mdm_1_0.vds
+# Journal file: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/d_mdm_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source d_mdm_1_0.tcl -notrace

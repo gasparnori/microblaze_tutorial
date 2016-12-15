@@ -1,0 +1,31 @@
+17:37:54 **** Build of configuration Debug for project master_debug ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../master_debug_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building file: ../src/xgpio_tapp_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_tapp_example.o" -I../../master_debug_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/xgpio_tapp_example.d" -MT"src/xgpio_tapp_example.o" -o "src/xgpio_tapp_example.o" "../src/xgpio_tapp_example.c"
+'Finished building: ../src/xgpio_tapp_example.c'
+' '
+'Building file: ../src/xspi_selftest_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xspi_selftest_example.o" -I../../master_debug_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/xspi_selftest_example.d" -MT"src/xspi_selftest_example.o" -o "src/xspi_selftest_example.o" "../src/xspi_selftest_example.c"
+'Finished building: ../src/xspi_selftest_example.c'
+' '
+'Building target: master_debug.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../master_debug_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "master_debug.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xspi_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: master_debug.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size master_debug.elf  |tee "master_debug.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10420	    364	   3248	  14032	   36d0	master_debug.elf
+'Finished building: master_debug.elf.size'
+' '
+
+17:37:54 Build Finished (took 578ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;adc/src/testperiph.c&apos; to &apos;adc_main.c&apos;" description="Rename resource &apos;testperiph.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/testperiph.c" name="adc_main.c" stamp="1480329794461" updateReferences="true"/>
+</session>

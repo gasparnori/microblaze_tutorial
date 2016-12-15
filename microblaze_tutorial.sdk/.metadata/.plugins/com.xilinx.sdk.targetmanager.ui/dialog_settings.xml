@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="d_wrapper.mmi" key="d_wrapper_hw_platform_1-bmmFile"/>
+	<item value="Auto Detect" key="d_wrapper_hw_platform_1-device"/>
+	<item value="d_wrapper.bit" key="d_wrapper_hw_platform_0-bitFile"/>
+	<item value="false" key="d_wrapper_hw_platform_0-partial_bit"/>
+	<item value="d_wrapper.bit" key="d_wrapper_hw_platform_1-bitFile"/>
+	<item value="d_wrapper.mmi" key="d_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Auto Detect" key="d_wrapper_hw_platform_0-device"/>
+	<item value="d_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Local" key="d_wrapper_hw_platform_0-target"/>
+	<item value="Local" key="d_wrapper_hw_platform_1-target"/>
+	<item value="bootloop" key="d_wrapper_hw_platform_0-microblaze_0-initElf"/>
+	<item value="bootloop" key="d_wrapper_hw_platform_1-microblaze_0-initElf"/>
+	<item value="false" key="d_wrapper_hw_platform_1-partial_bit"/>
+</section>

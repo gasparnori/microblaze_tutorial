@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Nov 29 19:59:07 2016
+# Process ID: 7516
+# Current directory: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/d_xbar_1_synth_1
+# Command line: vivado.exe -log d_xbar_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source d_xbar_1.tcl
+# Log file: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/d_xbar_1_synth_1/d_xbar_1.vds
+# Journal file: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/d_xbar_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source d_xbar_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 370.457 ; gain = 159.855
+INFO: [Synth 8-638] synthesizing module 'd_xbar_1' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ip/d_xbar_1/synth/d_xbar_1.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_axi_crossbar' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_crossbar_sasd' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_addr_decoder' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_addr_decoder' (3#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_decerr_slave' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_decerr_slave' (4#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_addr_arbiter_sasd' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_addr_arbiter_sasd' (5#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_splitter' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_splitter' (6#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_splitter__parameterized0' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_splitter__parameterized0' (6#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice' (8#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (8#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_crossbar_sasd' (9#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_axi_crossbar' (10#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'd_xbar_1' (11#1) [d:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ip/d_xbar_1/synth/d_xbar_1.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 487.914 ; gain = 277.313
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 487.914 ; gain = 277.313
+INFO: [Device 21-403] Loading part xc7a15tcpg236-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 706.180 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 706.180 ; gain = 495.578
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 706.180 ; gain = 495.578
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    50|
+|3     |LUT3 |    12|
+|4     |LUT4 |    92|
+|5     |LUT5 |    35|
+|6     |LUT6 |    97|
+|7     |FDRE |   135|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 706.180 ; gain = 495.578
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 706.180 ; gain = 420.980

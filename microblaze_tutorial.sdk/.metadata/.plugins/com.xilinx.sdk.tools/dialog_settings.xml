@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="d_wrapper_hw_platform_0-fsblFile"/>
+	<item value="false" key="d_wrapper_hw_platform_0-blankCheck"/>
+	<item value="d_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="Auto Detect" key="d_wrapper_hw_platform_0-device"/>
+	<item value="true" key="d_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="Local" key="d_wrapper_hw_platform_0-target"/>
+	<item value="n25q32-3.3v-spi-x1_x2_x4" key="d_wrapper_hw_platform_0-flashType"/>
+	<item value="D:\Nora\cmod_a7_projects\microblaze_new\microblaze_new.runs\impl_1\d_wrapper.bin" key="d_wrapper_hw_platform_0-imgFile"/>
+	<item value="0x60000000" key="d_wrapper_hw_platform_0-offSet"/>
+</section>
