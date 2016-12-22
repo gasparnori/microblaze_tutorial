@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="D:/Nora/tutorial/microblaze_tutorial/microblaze_tutorial.xpr">
+<Project Version="7" Minor="17" Path="D:/Nora/tutorial/microblaze/microblaze_tutorial.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3f6342d3a2c34b66a0e6be83245d7206"/>
@@ -54,14 +54,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/adc_io.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/new/adc_io.vhd"/>
-          <Attr Name="ImportTime" Val="1480608093"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/bd/d/d.bd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/d.bd"/>
@@ -70,13 +62,7 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="d_adc_io_0_0_stub.v"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="d_adc_io_0_0_sim_netlist.vhdl"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="d_adc_io_0_0_sim_netlist.v"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="d_adc_io_0_0_stub.vhdl"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="synth/d_adc_io_0_0.vhd"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="sim/d_adc_io_0_0.vhd"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_mem_intercon_0/d_axi_mem_intercon_0.xci"/>
+        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_quad_spi_0_3/d_axi_quad_spi_0_3.xci"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_uartlite_0_0/d_axi_uartlite_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_emc_0_0/d_axi_emc_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_rst_clk_wiz_0_100M_0/d_rst_clk_wiz_0_100M_0.xci"/>
@@ -92,39 +78,39 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_ilmb_v10_0/d_ilmb_v10_0.xci"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_dlmb_v10_0/d_dlmb_v10_0.xci"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_clk_wiz_0_0/d_clk_wiz_0_0.xci">
-          <Proxy FileSetName="d_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_clk_wiz_0_0/d_clk_wiz_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_microblaze_0_0/d_microblaze_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_gpio_1_0/d_axi_gpio_1_0.xci">
-          <Proxy FileSetName="d_axi_gpio_1_0"/>
-        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_microblaze_0_axi_periph_0/d_microblaze_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_quad_spi_1_0/d_axi_quad_spi_1_0.xci">
           <Proxy FileSetName="d_axi_quad_spi_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_quad_spi_0_0/d_axi_quad_spi_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_gpio_0_0/d_axi_gpio_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_mem_intercon_0/d_axi_mem_intercon_0.xci"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_xbar_1/d_xbar_1.xci">
           <Proxy FileSetName="d_xbar_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_gpio_0_0/d_axi_gpio_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="hdl/d.vhd"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_microblaze_0_axi_periph_0/d_microblaze_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_xbar_0/d_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="hdl/d.hwdef"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="hw_handoff/d_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="hw_handoff/d.hwh"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="d_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="d.bmm"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_axi_quad_spi_0_3/d_axi_quad_spi_0_3.xci"/>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="ip/d_adc_io_0_0/d_adc_io_0_0.xci">
-          <Proxy FileSetName="d_adc_io_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="d_adc_io_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="hw_handoff/d.hwh"/>
+        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="hw_handoff/d_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="d.bd" FileRelPathName="hdl/d.hwdef"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/d/hdl/d_wrapper.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd"/>
           <Attr Name="ImportTime" Val="1481204895"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/adc_io.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/new/adc_io.vhd"/>
+          <Attr Name="ImportTime" Val="1480608093"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -212,27 +198,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="d_adc_io_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/d_adc_io_0_0">
-      <Config>
-        <Option Name="TopModule" Val="d_adc_io_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="d_axi_gpio_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/d_axi_gpio_1_0">
-      <Config>
-        <Option Name="TopModule" Val="d_axi_gpio_1_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="d_axi_quad_spi_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/d_axi_quad_spi_1_0">
       <Config>
         <Option Name="TopModule" Val="d_axi_quad_spi_1_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="d_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/d_clk_wiz_0_0">
-      <Config>
-        <Option Name="TopModule" Val="d_clk_wiz_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -296,31 +264,7 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="d_adc_io_0_0_synth_1" Type="Ft3:Synth" SrcSet="d_adc_io_0_0" Part="xc7a15tcpg236-1" ConstrsSet="d_adc_io_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/d_adc_io_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="d_axi_gpio_1_0_synth_1" Type="Ft3:Synth" SrcSet="d_axi_gpio_1_0" Part="xc7a15tcpg236-1" ConstrsSet="d_axi_gpio_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/d_axi_gpio_1_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="d_axi_quad_spi_1_0_synth_1" Type="Ft3:Synth" SrcSet="d_axi_quad_spi_1_0" Part="xc7a15tcpg236-1" ConstrsSet="d_axi_quad_spi_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/d_axi_quad_spi_1_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="d_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="d_clk_wiz_0_0" Part="xc7a15tcpg236-1" ConstrsSet="d_clk_wiz_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/d_clk_wiz_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
@@ -406,52 +350,7 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="d_adc_io_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a15tcpg236-1" ConstrsSet="d_adc_io_0_0" Description="Default settings for Implementation." SynthRun="d_adc_io_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="d_axi_gpio_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a15tcpg236-1" ConstrsSet="d_axi_gpio_1_0" Description="Default settings for Implementation." SynthRun="d_axi_gpio_1_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="d_axi_quad_spi_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a15tcpg236-1" ConstrsSet="d_axi_quad_spi_1_0" Description="Default settings for Implementation." SynthRun="d_axi_quad_spi_1_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="d_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a15tcpg236-1" ConstrsSet="d_clk_wiz_0_0" Description="Default settings for Implementation." SynthRun="d_clk_wiz_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>

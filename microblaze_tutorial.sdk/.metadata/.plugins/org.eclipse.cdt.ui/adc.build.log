@@ -1,4 +1,4 @@
-17:14:03 **** Build of configuration Debug for project adc ****
+12:15:48 **** Build of configuration Debug for project adc ****
 make all 
 'Building file: ../src/adc_main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -31,5 +31,5 @@ mb-size adc.elf  |tee "adc.elf.size"
 'Finished building: adc.elf.size'
 ' '
 
-17:14:03 Build Finished (took 712ms)
+12:15:48 Build Finished (took 723ms)
 

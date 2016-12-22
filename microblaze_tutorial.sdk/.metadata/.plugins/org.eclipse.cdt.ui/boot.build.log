@@ -1,4 +1,4 @@
-17:14:04 **** Build of configuration Debug for project boot ****
+12:15:48 **** Build of configuration Debug for project boot ****
 make all 
 'Building file: ../src/bootloader.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -59,6 +59,16 @@ d:\sdk\2016.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:223:9: not
                             ^
 'Finished building: ../src/bootloader.c'
 ' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../adc_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/srec.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/srec.o" -I../../adc_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/srec.d" -MT"src/srec.o" -o "src/srec.o" "../src/srec.c"
+'Finished building: ../src/srec.c'
+' '
 'Building target: boot.elf'
 'Invoking: MicroBlaze gcc linker'
 mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../adc_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "boot.elf"  ./src/bootloader.o ./src/platform.o ./src/srec.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilisf,-lxil,-lgcc,-lc,--end-group
@@ -71,5 +81,5 @@ mb-size boot.elf  |tee "boot.elf.size"
 'Finished building: boot.elf.size'
 ' '
 
-17:14:04 Build Finished (took 311ms)
+12:15:49 Build Finished (took 790ms)
 

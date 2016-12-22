@@ -60,12 +60,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==d_axi_quad_spi_
 # IP: bd/d/ip/d_axi_quad_spi_1_0/d_axi_quad_spi_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==d_axi_quad_spi_1_0 || ORIG_REF_NAME==d_axi_quad_spi_1_0}]
 
-# IP: bd/d/ip/d_axi_gpio_1_0/d_axi_gpio_1_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==d_axi_gpio_1_0 || ORIG_REF_NAME==d_axi_gpio_1_0}]
-
-# IP: bd/d/ip/d_adc_io_0_0/d_adc_io_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==d_adc_io_0_0 || ORIG_REF_NAME==d_adc_io_0_0}]
-
 # IP: bd/d/ip/d_axi_quad_spi_0_3/d_axi_quad_spi_0_3.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==d_axi_quad_spi_0_3 || ORIG_REF_NAME==d_axi_quad_spi_0_3}]
 

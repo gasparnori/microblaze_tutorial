@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="d_dlmb_bram_if_cntlr_0_synth_1" LaunchPart="xc7a15tcpg236-1" LaunchTime="1480591272">
-  <File Type="RDS-PROPCONSTRS" Name="d_dlmb_bram_if_cntlr_0_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="d_dlmb_bram_if_cntlr_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="d_dlmb_bram_if_cntlr_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="d_dlmb_bram_if_cntlr_0.vds"/>
   <File Type="RDS-UTIL" Name="d_dlmb_bram_if_cntlr_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="d_dlmb_bram_if_cntlr_0_utilization_synth.pb"/>

@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="d" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1481204899"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1481204899"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1481204899"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1482055125"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1482055125"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1482055125"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\d_microblaze_0_0\d_microblaze_0_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0"/>
@@ -150,22 +150,6 @@
       </File>
       <File Name="ip\d_axi_quad_spi_1_0\d_axi_quad_spi_1_0.xci" Type="IP">
         <Instance HierarchyPath="SPI_M"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\d_axi_gpio_1_0\d_axi_gpio_1_0.xci" Type="IP">
-        <Instance HierarchyPath="adc_control"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\d_adc_io_0_0\d_adc_io_0_0.xci" Type="IP">
-        <Instance HierarchyPath="adc_io_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

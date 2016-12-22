@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
--- Date        : Thu Dec 08 15:48:45 2016
+-- Date        : Sun Dec 18 10:29:46 2016
 -- Host        : Baldr running 64-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top d_clk_wiz_0_0 -prefix
 --               d_clk_wiz_0_0_ d_clk_wiz_0_0_stub.vhdl

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/d_xbar_1_synth_1'
+HD_PWD='D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/d_xbar_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

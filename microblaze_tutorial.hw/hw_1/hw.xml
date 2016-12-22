@@ -20,7 +20,7 @@
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7a15t_0" gui_info="">
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="D:/Vivado/2016.3/data/xicom/cfgmem/bitfile/spi_xc7a15t_pulldown.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/d_wrapper.bit"/>
       <Properties Property="PROGRAM.HW_CFGMEM_PART" value="n25q32-3.3v-spi-x1_x2_x4"/>
     </Object>
   </ObjectList>

@@ -1,4 +1,4 @@
-17:37:46 **** Build of project gpio_bsp ****
+12:15:49 **** Build of project gpio_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_1/src"
 make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
@@ -33,5 +33,5 @@ make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-
 "Compiling uartlite"
 'Finished building libraries'
 
-17:37:48 Build Finished (took 2s.427ms)
+12:15:52 Build Finished (took 2s.597ms)
 

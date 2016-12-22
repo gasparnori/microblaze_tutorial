@@ -1,6 +1,29 @@
-17:14:35 **** Auto Build of configuration Debug for project gpio ****
+12:15:52 **** Build of configuration Debug for project gpio ****
 make all 
-make: .`all רובע תושעל המ ןיא
+'Building file: ../src/testperiph.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../gpio_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c:9:13: warning: 'SpiInstance' defined but not used [-Wunused-variable]
+ static XSpi SpiInstance;
+             ^
+'Finished building: ../src/testperiph.c'
+' '
+'Building file: ../src/xgpio_tapp_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_tapp_example.o" -I../../gpio_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/xgpio_tapp_example.d" -MT"src/xgpio_tapp_example.o" -o "src/xgpio_tapp_example.o" "../src/xgpio_tapp_example.c"
+'Finished building: ../src/xgpio_tapp_example.c'
+' '
+'Building target: gpio.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "gpio.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio.elf  |tee "gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4832	    308	   3260	   8400	   20d0	gpio.elf
+'Finished building: gpio.elf.size'
+' '
 
-17:14:35 Build Finished (took 61ms)
+12:15:52 Build Finished (took 584ms)
 

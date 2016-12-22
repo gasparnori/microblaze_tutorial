@@ -17,98 +17,94 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a15t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a15t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1340 
+INFO: Helper process launched with PID 8180 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 417.348 ; gain = 207.066
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 411.914 ; gain = 201.176
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'd_wrapper' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:47]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_0' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'd_wrapper' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:43]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_0' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:140]
 INFO: [Synth 8-638] synthesizing module 'IOBUF' [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_1' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:155]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_2' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:162]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_3' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:169]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_4' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:176]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_5' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:183]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_6' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:190]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_7' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:197]
-INFO: [Synth 8-3491] module 'd' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:3800' bound to instance 'd_i' of component 'd' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:204]
-INFO: [Synth 8-638] synthesizing module 'd' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:3849]
-INFO: [Synth 8-3491] module 'd_axi_quad_spi_0_3' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_quad_spi_0_3_stub.vhdl:5' bound to instance 'QSPI_FLASH' of component 'd_axi_quad_spi_0_3' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4664]
-INFO: [Synth 8-638] synthesizing module 'd_axi_quad_spi_0_3' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_quad_spi_0_3_stub.vhdl:51]
-INFO: [Synth 8-3491] module 'd_axi_quad_spi_1_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_quad_spi_1_0_stub.vhdl:5' bound to instance 'SPI_M' of component 'd_axi_quad_spi_1_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4707]
-INFO: [Synth 8-638] synthesizing module 'd_axi_quad_spi_1_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_quad_spi_1_0_stub.vhdl:44]
-INFO: [Synth 8-3491] module 'd_axi_quad_spi_0_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_quad_spi_0_0_stub.vhdl:5' bound to instance 'SPI_S' of component 'd_axi_quad_spi_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4743]
-INFO: [Synth 8-638] synthesizing module 'd_axi_quad_spi_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_quad_spi_0_0_stub.vhdl:45]
-INFO: [Synth 8-3491] module 'd_axi_gpio_1_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_gpio_1_0_stub.vhdl:5' bound to instance 'adc_control' of component 'd_axi_gpio_1_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4780]
-INFO: [Synth 8-638] synthesizing module 'd_axi_gpio_1_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_gpio_1_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'd_adc_io_0_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_adc_io_0_0_stub.vhdl:5' bound to instance 'adc_io_0' of component 'd_adc_io_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4804]
-INFO: [Synth 8-638] synthesizing module 'd_adc_io_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_adc_io_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'd_axi_emc_0_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_emc_0_0_stub.vhdl:5' bound to instance 'axi_emc_0' of component 'd_axi_emc_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4812]
-INFO: [Synth 8-638] synthesizing module 'd_axi_emc_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_emc_0_0_stub.vhdl:66]
-INFO: [Synth 8-3491] module 'd_axi_gpio_0_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'd_axi_gpio_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4871]
-INFO: [Synth 8-638] synthesizing module 'd_axi_gpio_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-638] synthesizing module 'd_axi_mem_intercon_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1998]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_176BSWC' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:93]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_176BSWC' (2#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:93]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1N8CZMU' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1446]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1N8CZMU' (3#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1446]
-INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_5TBQNA' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1758]
-INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_5TBQNA' (4#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1758]
-INFO: [Synth 8-3491] module 'd_xbar_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'd_xbar_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:2668]
-INFO: [Synth 8-638] synthesizing module 'd_xbar_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_xbar_0_stub.vhdl:89]
-INFO: [Synth 8-256] done synthesizing module 'd_axi_mem_intercon_0' (5#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1998]
-INFO: [Synth 8-3491] module 'd_axi_uartlite_0_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'd_axi_uartlite_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:5015]
-INFO: [Synth 8-638] synthesizing module 'd_axi_uartlite_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'd_clk_wiz_0_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'd_clk_wiz_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:5040]
-INFO: [Synth 8-638] synthesizing module 'd_clk_wiz_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_clk_wiz_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'd_mdm_1_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'd_mdm_1_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:5048]
-INFO: [Synth 8-638] synthesizing module 'd_mdm_1_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_mdm_1_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'd_microblaze_0_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'd_microblaze_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:5061]
-INFO: [Synth 8-638] synthesizing module 'd_microblaze_0_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_microblaze_0_0_stub.vhdl:137]
-INFO: [Synth 8-638] synthesizing module 'd_microblaze_0_axi_periph_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:2933]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1G2HXWC' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:248]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1G2HXWC' (6#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:248]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XW5ZQ4' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:349]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XW5ZQ4' (7#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:349]
-INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1R75USD' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:450]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1R75USD' (8#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:450]
-INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_9IJTGD' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:551]
-INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_9IJTGD' (9#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:551]
-INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_3691ZY' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:652]
-INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_3691ZY' (10#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:652]
-INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1KBO59A' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:753]
-INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1KBO59A' (11#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:753]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1W231RQ' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1611]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1W231RQ' (12#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1611]
-INFO: [Synth 8-3491] module 'd_xbar_1' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'd_xbar_1' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:3667]
-INFO: [Synth 8-638] synthesizing module 'd_xbar_1' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_xbar_1_stub.vhdl:51]
-INFO: [Synth 8-256] done synthesizing module 'd_microblaze_0_axi_periph_0' (13#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:2933]
-INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_CZ6G37' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:837]
-INFO: [Synth 8-3491] module 'd_dlmb_bram_if_cntlr_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'd_dlmb_bram_if_cntlr_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1047]
-INFO: [Synth 8-638] synthesizing module 'd_dlmb_bram_if_cntlr_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_dlmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'd_dlmb_v10_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'd_dlmb_v10_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1101]
-INFO: [Synth 8-638] synthesizing module 'd_dlmb_v10_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_dlmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'd_ilmb_bram_if_cntlr_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'd_ilmb_bram_if_cntlr_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1129]
-INFO: [Synth 8-638] synthesizing module 'd_ilmb_bram_if_cntlr_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_ilmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'd_ilmb_v10_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'd_ilmb_v10_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1183]
-INFO: [Synth 8-638] synthesizing module 'd_ilmb_v10_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_ilmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'd_lmb_bram_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'd_lmb_bram_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1211]
-INFO: [Synth 8-638] synthesizing module 'd_lmb_bram_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_lmb_bram_0_stub.vhdl:25]
-INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_CZ6G37' (14#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:837]
-INFO: [Synth 8-3491] module 'd_rst_clk_wiz_0_100M_0' declared at 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'd_rst_clk_wiz_0_100M_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:5354]
-INFO: [Synth 8-638] synthesizing module 'd_rst_clk_wiz_0_100M_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/realtime/d_rst_clk_wiz_0_100M_0_stub.vhdl:21]
-INFO: [Synth 8-256] done synthesizing module 'd' (15#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:3849]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'qspi_flash_io0_iobuf' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:268]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'qspi_flash_io1_iobuf' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:275]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'qspi_flash_io2_iobuf' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:282]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'qspi_flash_io3_iobuf' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:289]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'qspi_flash_ss_iobuf' of component 'IOBUF' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:296]
-INFO: [Synth 8-256] done synthesizing module 'd_wrapper' (16#1) [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:47]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_1' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:147]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_2' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:154]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_3' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:161]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_4' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:168]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_5' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:175]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_6' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:182]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'cellular_ram_dq_iobuf_7' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:189]
+INFO: [Synth 8-3491] module 'd' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:3833' bound to instance 'd_i' of component 'd' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'd' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:3878]
+INFO: [Synth 8-3491] module 'd_axi_quad_spi_0_3' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_quad_spi_0_3_stub.vhdl:5' bound to instance 'QSPI_FLASH' of component 'd_axi_quad_spi_0_3' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4642]
+INFO: [Synth 8-638] synthesizing module 'd_axi_quad_spi_0_3' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_quad_spi_0_3_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'd_axi_quad_spi_1_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_quad_spi_1_0_stub.vhdl:5' bound to instance 'SPI_M' of component 'd_axi_quad_spi_1_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4685]
+INFO: [Synth 8-638] synthesizing module 'd_axi_quad_spi_1_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_quad_spi_1_0_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'd_axi_quad_spi_0_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_quad_spi_0_0_stub.vhdl:5' bound to instance 'SPI_S' of component 'd_axi_quad_spi_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4721]
+INFO: [Synth 8-638] synthesizing module 'd_axi_quad_spi_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_quad_spi_0_0_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'd_axi_emc_0_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_emc_0_0_stub.vhdl:5' bound to instance 'axi_emc_0' of component 'd_axi_emc_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4758]
+INFO: [Synth 8-638] synthesizing module 'd_axi_emc_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_emc_0_0_stub.vhdl:66]
+INFO: [Synth 8-3491] module 'd_axi_gpio_0_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'd_axi_gpio_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4817]
+INFO: [Synth 8-638] synthesizing module 'd_axi_gpio_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-638] synthesizing module 'd_axi_mem_intercon_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1998]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_176BSWC' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_176BSWC' (2#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:93]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1N8CZMU' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1446]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1N8CZMU' (3#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1446]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_5TBQNA' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1758]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_5TBQNA' (4#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1758]
+INFO: [Synth 8-3491] module 'd_xbar_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'd_xbar_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:2668]
+INFO: [Synth 8-638] synthesizing module 'd_xbar_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_xbar_0_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'd_axi_mem_intercon_0' (5#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1998]
+INFO: [Synth 8-3491] module 'd_axi_uartlite_0_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'd_axi_uartlite_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4961]
+INFO: [Synth 8-638] synthesizing module 'd_axi_uartlite_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'd_clk_wiz_0_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'd_clk_wiz_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4986]
+INFO: [Synth 8-638] synthesizing module 'd_clk_wiz_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'd_mdm_1_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'd_mdm_1_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4994]
+INFO: [Synth 8-638] synthesizing module 'd_mdm_1_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'd_microblaze_0_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'd_microblaze_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:5007]
+INFO: [Synth 8-638] synthesizing module 'd_microblaze_0_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_microblaze_0_0_stub.vhdl:137]
+INFO: [Synth 8-638] synthesizing module 'd_microblaze_0_axi_periph_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:2933]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1G2HXWC' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1G2HXWC' (6#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XW5ZQ4' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:349]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XW5ZQ4' (7#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:349]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1R75USD' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:450]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1R75USD' (8#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:450]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_9IJTGD' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:551]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_9IJTGD' (9#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:551]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_3691ZY' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:652]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_3691ZY' (10#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:652]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1KBO59A' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:753]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1KBO59A' (11#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:753]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1W231RQ' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1611]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1W231RQ' (12#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1611]
+INFO: [Synth 8-3491] module 'd_xbar_1' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'd_xbar_1' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:3667]
+INFO: [Synth 8-638] synthesizing module 'd_xbar_1' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_xbar_1_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'd_microblaze_0_axi_periph_0' (13#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:2933]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_CZ6G37' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:837]
+INFO: [Synth 8-3491] module 'd_dlmb_bram_if_cntlr_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'd_dlmb_bram_if_cntlr_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1047]
+INFO: [Synth 8-638] synthesizing module 'd_dlmb_bram_if_cntlr_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'd_dlmb_v10_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'd_dlmb_v10_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1101]
+INFO: [Synth 8-638] synthesizing module 'd_dlmb_v10_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'd_ilmb_bram_if_cntlr_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'd_ilmb_bram_if_cntlr_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1129]
+INFO: [Synth 8-638] synthesizing module 'd_ilmb_bram_if_cntlr_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'd_ilmb_v10_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'd_ilmb_v10_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1183]
+INFO: [Synth 8-638] synthesizing module 'd_ilmb_v10_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'd_lmb_bram_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'd_lmb_bram_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1211]
+INFO: [Synth 8-638] synthesizing module 'd_lmb_bram_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_lmb_bram_0_stub.vhdl:25]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_CZ6G37' (14#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:837]
+INFO: [Synth 8-3491] module 'd_rst_clk_wiz_0_100M_0' declared at 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'd_rst_clk_wiz_0_100M_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:5300]
+INFO: [Synth 8-638] synthesizing module 'd_rst_clk_wiz_0_100M_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/realtime/d_rst_clk_wiz_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'd' (15#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:3878]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'qspi_flash_io0_iobuf' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:256]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'qspi_flash_io1_iobuf' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:263]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'qspi_flash_io2_iobuf' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:270]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'qspi_flash_io3_iobuf' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:277]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'D:/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'qspi_flash_ss_iobuf' of component 'IOBUF' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:284]
+INFO: [Synth 8-256] done synthesizing module 'd_wrapper' (16#1) [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d_wrapper.vhd:43]
 WARNING: [Synth 8-3331] design s00_couplers_imp_1W231RQ has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_1W231RQ has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design s00_couplers_imp_1W231RQ has unconnected port S_ACLK
@@ -150,7 +146,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_176BSWC has unconnected port M_A
 WARNING: [Synth 8-3331] design m00_couplers_imp_176BSWC has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_176BSWC has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 458.738 ; gain = 248.457
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 453.313 ; gain = 242.574
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -160,27 +156,25 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 458.738 ; gain = 248.457
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 453.313 ; gain = 242.574
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_adc_io_0_0' instantiated as 'd_i/adc_io_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4804]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_emc_0_0' instantiated as 'd_i/axi_emc_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4812]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_gpio_0_0' instantiated as 'd_i/axi_gpio_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4871]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_gpio_1_0' instantiated as 'd_i/adc_control' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4780]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_quad_spi_0_0' instantiated as 'd_i/SPI_S' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4743]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_quad_spi_0_3' instantiated as 'd_i/QSPI_FLASH' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4664]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_quad_spi_1_0' instantiated as 'd_i/SPI_M' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:4707]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_uartlite_0_0' instantiated as 'd_i/axi_uartlite_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:5015]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_clk_wiz_0_0' instantiated as 'd_i/clk_wiz_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:5040]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_dlmb_bram_if_cntlr_0' instantiated as 'd_i/microblaze_0_local_memory/dlmb_bram_if_cntlr' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1047]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_dlmb_v10_0' instantiated as 'd_i/microblaze_0_local_memory/dlmb_v10' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1101]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_ilmb_bram_if_cntlr_0' instantiated as 'd_i/microblaze_0_local_memory/ilmb_bram_if_cntlr' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1129]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_ilmb_v10_0' instantiated as 'd_i/microblaze_0_local_memory/ilmb_v10' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1183]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_lmb_bram_0' instantiated as 'd_i/microblaze_0_local_memory/lmb_bram' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:1211]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_mdm_1_0' instantiated as 'd_i/mdm_1' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:5048]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_microblaze_0_0' instantiated as 'd_i/microblaze_0' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:5061]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_rst_clk_wiz_0_100M_0' instantiated as 'd_i/rst_clk_wiz_0_100M' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:5354]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_xbar_0' instantiated as 'd_i/axi_mem_intercon/xbar' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:2668]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_xbar_1' instantiated as 'd_i/microblaze_0_axi_periph/xbar' [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d.vhd:3667]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_emc_0_0' instantiated as 'd_i/axi_emc_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4758]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_gpio_0_0' instantiated as 'd_i/axi_gpio_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4817]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_quad_spi_0_0' instantiated as 'd_i/SPI_S' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4721]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_quad_spi_0_3' instantiated as 'd_i/QSPI_FLASH' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4642]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_quad_spi_1_0' instantiated as 'd_i/SPI_M' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4685]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_axi_uartlite_0_0' instantiated as 'd_i/axi_uartlite_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4961]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_clk_wiz_0_0' instantiated as 'd_i/clk_wiz_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4986]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_dlmb_bram_if_cntlr_0' instantiated as 'd_i/microblaze_0_local_memory/dlmb_bram_if_cntlr' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1047]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_dlmb_v10_0' instantiated as 'd_i/microblaze_0_local_memory/dlmb_v10' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1101]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_ilmb_bram_if_cntlr_0' instantiated as 'd_i/microblaze_0_local_memory/ilmb_bram_if_cntlr' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1129]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_ilmb_v10_0' instantiated as 'd_i/microblaze_0_local_memory/ilmb_v10' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1183]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_lmb_bram_0' instantiated as 'd_i/microblaze_0_local_memory/lmb_bram' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:1211]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_mdm_1_0' instantiated as 'd_i/mdm_1' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:4994]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_microblaze_0_0' instantiated as 'd_i/microblaze_0' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:5007]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_rst_clk_wiz_0_100M_0' instantiated as 'd_i/rst_clk_wiz_0_100M' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:5300]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_xbar_0' instantiated as 'd_i/axi_mem_intercon/xbar' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:2668]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'd_xbar_1' instantiated as 'd_i/microblaze_0_axi_periph/xbar' [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/hdl/d.vhd:3667]
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7a15tcpg236-1
@@ -188,82 +182,76 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp/d_microblaze_0_0_in_context.xdc] for cell 'd_i/microblaze_0'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp/d_microblaze_0_0_in_context.xdc] for cell 'd_i/microblaze_0'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_2/d_clk_wiz_0_0_in_context.xdc] for cell 'd_i/clk_wiz_0'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_2/d_clk_wiz_0_0_in_context.xdc] for cell 'd_i/clk_wiz_0'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_3/d_ilmb_v10_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_3/d_ilmb_v10_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_4/d_ilmb_v10_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_4/d_ilmb_v10_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_5/d_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_5/d_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_6/d_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_6/d_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_7/d_lmb_bram_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_7/d_lmb_bram_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_8/d_mdm_1_0_in_context.xdc] for cell 'd_i/mdm_1'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_8/d_mdm_1_0_in_context.xdc] for cell 'd_i/mdm_1'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_9/d_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'd_i/rst_clk_wiz_0_100M'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_9/d_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'd_i/rst_clk_wiz_0_100M'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_10/d_axi_emc_0_0_in_context.xdc] for cell 'd_i/axi_emc_0'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_10/d_axi_emc_0_0_in_context.xdc] for cell 'd_i/axi_emc_0'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_11/d_axi_uartlite_0_0_in_context.xdc] for cell 'd_i/axi_uartlite_0'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_11/d_axi_uartlite_0_0_in_context.xdc] for cell 'd_i/axi_uartlite_0'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_12/d_xbar_0_in_context.xdc] for cell 'd_i/axi_mem_intercon/xbar'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_12/d_xbar_0_in_context.xdc] for cell 'd_i/axi_mem_intercon/xbar'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_13/d_axi_gpio_0_0_in_context.xdc] for cell 'd_i/axi_gpio_0'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_13/d_axi_gpio_0_0_in_context.xdc] for cell 'd_i/axi_gpio_0'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_14/d_xbar_1_in_context.xdc] for cell 'd_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_14/d_xbar_1_in_context.xdc] for cell 'd_i/microblaze_0_axi_periph/xbar'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_15/d_axi_quad_spi_0_0_in_context.xdc] for cell 'd_i/SPI_S'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_15/d_axi_quad_spi_0_0_in_context.xdc] for cell 'd_i/SPI_S'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_16/d_axi_quad_spi_1_0_in_context.xdc] for cell 'd_i/SPI_M'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_16/d_axi_quad_spi_1_0_in_context.xdc] for cell 'd_i/SPI_M'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_17/d_axi_gpio_1_0_in_context.xdc] for cell 'd_i/adc_control'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_17/d_axi_gpio_1_0_in_context.xdc] for cell 'd_i/adc_control'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_18/d_adc_io_0_0_in_context.xdc] for cell 'd_i/adc_io_0'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_18/d_adc_io_0_0_in_context.xdc] for cell 'd_i/adc_io_0'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_19/d_axi_quad_spi_0_2_in_context.xdc] for cell 'd_i/QSPI_FLASH'
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_19/d_axi_quad_spi_0_2_in_context.xdc] for cell 'd_i/QSPI_FLASH'
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/constrs_1/new/const.xdc]
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/constrs_1/new/const.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/d_wrapper_propImpl.xdc].
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp/d_microblaze_0_0_in_context.xdc] for cell 'd_i/microblaze_0'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp/d_microblaze_0_0_in_context.xdc] for cell 'd_i/microblaze_0'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_2/d_clk_wiz_0_0_in_context.xdc] for cell 'd_i/clk_wiz_0'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_2/d_clk_wiz_0_0_in_context.xdc] for cell 'd_i/clk_wiz_0'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_3/d_ilmb_v10_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_3/d_ilmb_v10_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_4/d_ilmb_v10_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_4/d_ilmb_v10_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_5/d_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_5/d_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_6/d_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_6/d_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_7/d_lmb_bram_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_7/d_lmb_bram_0_in_context.xdc] for cell 'd_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_8/d_mdm_1_0_in_context.xdc] for cell 'd_i/mdm_1'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_8/d_mdm_1_0_in_context.xdc] for cell 'd_i/mdm_1'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_9/d_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'd_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_9/d_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'd_i/rst_clk_wiz_0_100M'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_10/d_axi_emc_0_0_in_context.xdc] for cell 'd_i/axi_emc_0'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_10/d_axi_emc_0_0_in_context.xdc] for cell 'd_i/axi_emc_0'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_11/d_axi_uartlite_0_0_in_context.xdc] for cell 'd_i/axi_uartlite_0'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_11/d_axi_uartlite_0_0_in_context.xdc] for cell 'd_i/axi_uartlite_0'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_12/d_xbar_0_in_context.xdc] for cell 'd_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_12/d_xbar_0_in_context.xdc] for cell 'd_i/axi_mem_intercon/xbar'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_13/d_axi_gpio_0_0_in_context.xdc] for cell 'd_i/axi_gpio_0'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_13/d_axi_gpio_0_0_in_context.xdc] for cell 'd_i/axi_gpio_0'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_14/d_xbar_1_in_context.xdc] for cell 'd_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_14/d_xbar_1_in_context.xdc] for cell 'd_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_15/d_axi_quad_spi_0_0_in_context.xdc] for cell 'd_i/SPI_S'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_15/d_axi_quad_spi_0_0_in_context.xdc] for cell 'd_i/SPI_S'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_16/d_axi_quad_spi_1_0_in_context.xdc] for cell 'd_i/SPI_M'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_16/d_axi_quad_spi_1_0_in_context.xdc] for cell 'd_i/SPI_M'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_17/d_axi_quad_spi_0_2_in_context.xdc] for cell 'd_i/QSPI_FLASH'
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_17/d_axi_quad_spi_0_2_in_context.xdc] for cell 'd_i/QSPI_FLASH'
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/d_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/d_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 13 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 721.332 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 722.145 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'd_i/QSPI_FLASH' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'd_i/SPI_M' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'd_i/SPI_S' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'd_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a15tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_2/d_clk_wiz_0_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/.Xil/Vivado-9008-Baldr/dcp_2/d_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_2/d_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/.Xil/Vivado-9160-Baldr/dcp_2/d_clk_wiz_0_0_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for d_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for d_i/QSPI_FLASH. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for d_i/SPI_M. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for d_i/SPI_S. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for d_i/adc_control. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for d_i/adc_io_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for d_i/axi_emc_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for d_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for d_i/axi_mem_intercon. (constraint file  auto generated constraint, line ).
@@ -281,10 +269,10 @@ Applied set_property DONT_TOUCH = true for d_i/microblaze_0_local_memory/ilmb_v1
 Applied set_property DONT_TOUCH = true for d_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for d_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -339,7 +327,7 @@ WARNING: [Synth 8-3331] design d_axi_mem_intercon_0 has unconnected port S00_ARE
 WARNING: [Synth 8-3331] design d_axi_mem_intercon_0 has unconnected port S01_ACLK
 WARNING: [Synth 8-3331] design d_axi_mem_intercon_0 has unconnected port S01_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -361,10 +349,10 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'd_i/mdm_1/Dbg_Clk_0' to p
 INFO: [Synth 8-5578] Moved timing constraint from pin 'd_i/mdm_1/Dbg_Update_0' to pin 'd_i/mdm_1/bbstub_Dbg_Update_0/O'
 INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -376,7 +364,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -400,7 +388,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -413,7 +401,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -425,25 +413,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -456,70 +444,66 @@ Report BlackBoxes:
 |1     |d_axi_quad_spi_0_3     |         1|
 |2     |d_axi_quad_spi_1_0     |         1|
 |3     |d_axi_quad_spi_0_0     |         1|
-|4     |d_axi_gpio_1_0         |         1|
-|5     |d_adc_io_0_0           |         1|
-|6     |d_axi_emc_0_0          |         1|
-|7     |d_axi_gpio_0_0         |         1|
-|8     |d_xbar_0               |         1|
-|9     |d_axi_uartlite_0_0     |         1|
-|10    |d_clk_wiz_0_0          |         1|
-|11    |d_mdm_1_0              |         1|
-|12    |d_microblaze_0_0       |         1|
-|13    |d_xbar_1               |         1|
-|14    |d_rst_clk_wiz_0_100M_0 |         1|
-|15    |d_dlmb_bram_if_cntlr_0 |         1|
-|16    |d_dlmb_v10_0           |         1|
-|17    |d_ilmb_bram_if_cntlr_0 |         1|
-|18    |d_ilmb_v10_0           |         1|
-|19    |d_lmb_bram_0           |         1|
+|4     |d_axi_emc_0_0          |         1|
+|5     |d_axi_gpio_0_0         |         1|
+|6     |d_xbar_0               |         1|
+|7     |d_axi_uartlite_0_0     |         1|
+|8     |d_clk_wiz_0_0          |         1|
+|9     |d_mdm_1_0              |         1|
+|10    |d_microblaze_0_0       |         1|
+|11    |d_xbar_1               |         1|
+|12    |d_rst_clk_wiz_0_100M_0 |         1|
+|13    |d_dlmb_bram_if_cntlr_0 |         1|
+|14    |d_dlmb_v10_0           |         1|
+|15    |d_ilmb_bram_if_cntlr_0 |         1|
+|16    |d_ilmb_v10_0           |         1|
+|17    |d_lmb_bram_0           |         1|
 +------+-----------------------+----------+
 
 Report Cell Usage: 
 +------+----------------------------+------+
 |      |Cell                        |Count |
 +------+----------------------------+------+
-|1     |d_adc_io_0_0_bbox           |     1|
-|2     |d_axi_emc_0_0_bbox          |     1|
-|3     |d_axi_gpio_0_0_bbox         |     1|
-|4     |d_axi_gpio_1_0_bbox         |     1|
-|5     |d_axi_quad_spi_0_0_bbox     |     1|
-|6     |d_axi_quad_spi_0_3_bbox     |     1|
-|7     |d_axi_quad_spi_1_0_bbox     |     1|
-|8     |d_axi_uartlite_0_0_bbox     |     1|
-|9     |d_clk_wiz_0_0_bbox          |     1|
-|10    |d_dlmb_bram_if_cntlr_0_bbox |     1|
-|11    |d_dlmb_v10_0_bbox           |     1|
-|12    |d_ilmb_bram_if_cntlr_0_bbox |     1|
-|13    |d_ilmb_v10_0_bbox           |     1|
-|14    |d_lmb_bram_0_bbox           |     1|
-|15    |d_mdm_1_0_bbox              |     1|
-|16    |d_microblaze_0_0_bbox       |     1|
-|17    |d_rst_clk_wiz_0_100M_0_bbox |     1|
-|18    |d_xbar_0_bbox               |     1|
-|19    |d_xbar_1_bbox               |     1|
-|20    |IBUF                        |     8|
-|21    |IOBUF                       |    13|
-|22    |OBUF                        |    31|
+|1     |d_axi_emc_0_0_bbox          |     1|
+|2     |d_axi_gpio_0_0_bbox         |     1|
+|3     |d_axi_quad_spi_0_0_bbox     |     1|
+|4     |d_axi_quad_spi_0_3_bbox     |     1|
+|5     |d_axi_quad_spi_1_0_bbox     |     1|
+|6     |d_axi_uartlite_0_0_bbox     |     1|
+|7     |d_clk_wiz_0_0_bbox          |     1|
+|8     |d_dlmb_bram_if_cntlr_0_bbox |     1|
+|9     |d_dlmb_v10_0_bbox           |     1|
+|10    |d_ilmb_bram_if_cntlr_0_bbox |     1|
+|11    |d_ilmb_v10_0_bbox           |     1|
+|12    |d_lmb_bram_0_bbox           |     1|
+|13    |d_mdm_1_0_bbox              |     1|
+|14    |d_microblaze_0_0_bbox       |     1|
+|15    |d_rst_clk_wiz_0_100M_0_bbox |     1|
+|16    |d_xbar_0_bbox               |     1|
+|17    |d_xbar_1_bbox               |     1|
+|18    |IBUF                        |     7|
+|19    |IOBUF                       |    13|
+|20    |OBUF                        |    28|
 +------+----------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+-------------------------------------+------+
 |      |Instance                      |Module                               |Cells |
 +------+------------------------------+-------------------------------------+------+
-|1     |top                           |                                     |  2457|
-|2     |  d_i                         |d                                    |  2405|
+|1     |top                           |                                     |  2407|
+|2     |  d_i                         |d                                    |  2359|
 |3     |    axi_mem_intercon          |d_axi_mem_intercon_0                 |   254|
 |4     |    microblaze_0_axi_periph   |d_microblaze_0_axi_periph_0          |   707|
 |5     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_CZ6G37 |   494|
 +------+------------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 721.332 ; gain = 511.051
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 721.332 ; gain = 112.711
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 721.332 ; gain = 511.051
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 722.145 ; gain = 115.563
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 722.145 ; gain = 511.406
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -528,9 +512,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUF, OBUFT): 13 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-113 Infos, 83 Warnings, 0 Critical Warnings and 0 Errors encountered.
+106 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 721.332 ; gain = 385.805
-INFO: [Common 17-1381] The checkpoint 'D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/d_wrapper.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 721.332 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 15 16:04:13 2016...
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 722.145 ; gain = 393.734
+INFO: [Common 17-1381] The checkpoint 'D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/d_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 722.145 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 18 11:59:43 2016...

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a15tcpg236-1" LaunchTime="1481810620">
+<GenRun Id="impl_1" LaunchPart="xc7a15tcpg236-1" LaunchTime="1482055126">
+  <File Type="PWROPT-DRC" Name="d_wrapper_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="d_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="d_wrapper_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="d_wrapper_power_routed.rpx"/>
   <File Type="PA-TCL" Name="d_wrapper.tcl"/>
-  <File Type="INIT-TIMING" Name="d_wrapper_timing_summary_init.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="d_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="d_wrapper_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="d_wrapper.hwdef"/>
   <File Type="RDI-RDI" Name="d_wrapper.vdi"/>
   <File Type="OPT-DCP" Name="d_wrapper_opt.dcp"/>
-  <File Type="OPT-HWDEF" Name="d_wrapper.hwdef"/>
   <File Type="OPT-DRC" Name="d_wrapper_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="d_wrapper_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="d_wrapper_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="d_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="d_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="d_wrapper_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="d_wrapper_drc_routed.rpx"/>
   <File Type="BG-BIN" Name="d_wrapper.bin"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="d_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="d_wrapper_drc_routed.rpx"/>
   <File Type="BG-DRC" Name="d_wrapper.drc"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="d_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="d_wrapper_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MSK" Name="d_wrapper.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="d_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="d_wrapper_methodology_drc_routed.rpx"/>
   <File Type="BG-BGN" Name="d_wrapper.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="d_wrapper_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="d_wrapper_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="d_wrapper_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="d_wrapper_route_status.rpt"/>
@@ -62,14 +62,6 @@
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/adc_io.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/new/adc_io.vhd"/>
-        <Attr Name="ImportTime" Val="1480608093"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/d/d.bd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/d.bd"/>
@@ -83,6 +75,15 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/hdl/d_wrapper.vhd"/>
         <Attr Name="ImportTime" Val="1481204895"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adc_io.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/new/adc_io.vhd"/>
+        <Attr Name="ImportTime" Val="1480608093"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -130,12 +131,9 @@
       <Option Id="BinFile">1</Option>
     </Step>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="d_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="d_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="d_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="d_xbar_1"/>
   <BlockFileSet Type="BlockSrcs" Name="d_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="d_adc_io_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="d_axi_gpio_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="d_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="d_axi_quad_spi_1_0"/>
 </GenRun>

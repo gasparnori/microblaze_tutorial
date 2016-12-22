@@ -2,11 +2,11 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu Dec 15 16:03:47 2016
-# Process ID: 9008
-# Current directory: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1
+# Start of session at: Sun Dec 18 11:59:17 2016
+# Process ID: 9160
+# Current directory: D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1
 # Command line: vivado.exe -log d_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source d_wrapper.tcl
-# Log file: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1/d_wrapper.vds
-# Journal file: D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.runs/synth_1\vivado.jou
+# Log file: D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1/d_wrapper.vds
+# Journal file: D:/Nora/tutorial/microblaze/microblaze_tutorial.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source d_wrapper.tcl -notrace

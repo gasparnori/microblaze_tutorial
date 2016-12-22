@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-// Date        : Tue Nov 29 19:59:36 2016
+// Date        : Sun Dec 18 11:59:16 2016
 // Host        : Baldr running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
-//               D:/Nora/cmod_a7_projects/microblaze_new/microblaze_new.srcs/sources_1/bd/d/ip/d_xbar_1/d_xbar_1_stub.v
+//               D:/Nora/tutorial/microblaze/microblaze_tutorial.srcs/sources_1/bd/d/ip/d_xbar_1/d_xbar_1_stub.v
 // Design      : d_xbar_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a15tcpg236-1

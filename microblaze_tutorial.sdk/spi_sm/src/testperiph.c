@@ -40,18 +40,6 @@ int SpiInit(XSpi* Spi, u16 DeviceId, int master)
 			printf("error with initialization\r\n");
 			return XST_FAILURE;
 		}
-		if (master>0){	//if it's a master device
-			printf("master settings...");
-			if(XSpi_SetOptions(Spi, XSP_MASTER_OPTION)!= XST_SUCCESS) {
-				printf("error with master settings\r\n");
-				return XST_FAILURE;
-			};
-		}else{
-			if(XSpi_SetOptions(Spi, XSP_CLK_PHASE_1_OPTION |XSP_CLK_ACTIVE_LOW_OPTION)!= XST_SUCCESS) {
-				printf("error with slave settings\r\n");
-				return XST_FAILURE;
-			};
-		}
 
 		//Perform a self-test to ensure that the hardware was built correctly
 		if(XSpi_SelfTest(Spi)!= XST_SUCCESS) {
@@ -61,6 +49,18 @@ int SpiInit(XSpi* Spi, u16 DeviceId, int master)
 	}
 	XSpi_Start(Spi);
 	XSpi_IntrGlobalDisable(Spi);
+	if (master>0){	//if it's a master device
+				printf("master settings...");
+				if(XSpi_SetOptions(Spi, XSP_MASTER_OPTION)!= XST_SUCCESS) {
+					printf("error with master settings\r\n");
+					return XST_FAILURE;
+				};
+			}else{
+				if(XSpi_SetOptions(Spi, XSP_CLK_PHASE_1_OPTION |XSP_CLK_ACTIVE_LOW_OPTION)!= XST_SUCCESS) {
+					printf("error with slave settings\r\n");
+					return XST_FAILURE;
+				};
+	}
 
 	return XST_SUCCESS;
 }
@@ -97,10 +97,10 @@ int SPI_slave_transfer(XSpi *Spi, XGpio *LED, u8 *message){
 	}
 	return 0;
 }
-int SPI_master_transfer(XSpi *Spi, XGpio *LED, u8 *message){
-	XSpi_SetSlaveSelect(Spi, 0x1);	//this only selects which slave will be used... doesn't initiate the communication...
+int SPI_master_transfer(XSpi *Spi, u8 *message){
+	//this only selects which slave will be used... doesn't initiate the communication...
+	XSpi_SetSlaveSelect(Spi, 0x1);
 	u8 received;
-	printf("slave selected \r\n");
 	XSpi_Transfer(Spi, message, &received, 1);
 	xil_printf("received 0x%x \r\n", received);
 	return received;
@@ -122,8 +122,8 @@ int main()
 	  		 // Read_GPIO(&LED); //we use the LED for the SPI now...
 	  		  u8 message=0x11;
 	  		  //SPI transfer
-	  		  //SPI_slave_transfer(&Spi_S, &LED, &message);
-	  		  SPI_master_transfer(&Spi_M, &LED, &message);
+	  		  SPI_slave_transfer(&Spi_S, &LED, &message);
+	  		  //SPI_master_transfer(&Spi_M, &message);
 	  	  }
 	  }
 	  else {

@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
---Date        : Thu Dec 08 15:48:15 2016
+--Date        : Sun Dec 18 11:58:39 2016
 --Host        : Baldr running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target d_wrapper.bd
 --Design      : d_wrapper
@@ -13,18 +13,14 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity d_wrapper is
   port (
-    ADC_CLK : out STD_LOGIC;
     CS_M : out STD_LOGIC_VECTOR ( 0 to 0 );
     CS_S : in STD_LOGIC;
-    DRDY_N : in STD_LOGIC;
     MISO_M : in STD_LOGIC;
     MISO_S : out STD_LOGIC;
     MOSI_M : out STD_LOGIC;
     MOSI_S : in STD_LOGIC;
-    R_N : out STD_LOGIC;
     SCLK_M : out STD_LOGIC;
     SCLK_S : in STD_LOGIC;
-    START : out STD_LOGIC;
     cellular_ram_addr : out STD_LOGIC_VECTOR ( 18 downto 0 );
     cellular_ram_ce_n : out STD_LOGIC;
     cellular_ram_dq_io : inout STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -80,10 +76,6 @@ architecture STRUCTURE of d_wrapper is
     SCLK_S : in STD_LOGIC;
     CS_S : in STD_LOGIC;
     SCLK_M : out STD_LOGIC;
-    R_N : out STD_LOGIC;
-    START : out STD_LOGIC;
-    DRDY_N : in STD_LOGIC;
-    ADC_CLK : out STD_LOGIC;
     CS_M : out STD_LOGIC_VECTOR ( 0 to 0 );
     MISO_M : in STD_LOGIC;
     MOSI_M : out STD_LOGIC
@@ -203,18 +195,14 @@ cellular_ram_dq_iobuf_7: component IOBUF
     );
 d_i: component d
      port map (
-      ADC_CLK => ADC_CLK,
       CS_M(0) => CS_M(0),
       CS_S => CS_S,
-      DRDY_N => DRDY_N,
       MISO_M => MISO_M,
       MISO_S => MISO_S,
       MOSI_M => MOSI_M,
       MOSI_S => MOSI_S,
-      R_N => R_N,
       SCLK_M => SCLK_M,
       SCLK_S => SCLK_S,
-      START => START,
       cellular_ram_addr(18 downto 0) => cellular_ram_addr(18 downto 0),
       cellular_ram_ce_n => cellular_ram_ce_n,
       cellular_ram_dq_i(7) => cellular_ram_dq_i_7(7),
